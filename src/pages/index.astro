@@ -1,0 +1,41 @@
+---
+// SVG
+import background from "@ast/background.avif";
+
+// Estilos
+import "@sty/style__.css";
+
+// import Welcome from "@cmp/Welcome.astro";
+
+// componentes
+import Layout from "@lyt/Layout.astro";
+import Header from "@cmt/header.astro";
+import Carrusel from "@cmt/carrusel.astro";
+import Hero from "@cmt/hero.astro";
+import Services from "@cmt/services.astro";
+import Gallery from "@cmt/gallery.astro";
+import Foot from "@cmt/footer.astro";
+---
+
+<Layout>
+  <img id="background" src={background.src} alt="" fetchpriority="high" />
+
+  <Header />
+  <Carrusel
+    text="Bienvenido a mi sitio web"
+    speed="40s"
+    backgroundColor="bg-[#b56576]"
+    textColor="text-white"
+    separator=" 🔥 "
+  />
+  <Hero />
+
+  <div class="m-auto mt-6 mb-5 bg-[#e26d5c] w-[700px] h-[2px]"></div>
+
+  <Services id="sevicios" />
+  <div class="m-auto mt-6 mb-5 bg-[#e26d5c] w-[700px] h-[2px]"></div>
+
+  <Gallery id="galeria" />
+</Layout>
+
+<Foot />
