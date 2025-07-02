@@ -1,0 +1,58 @@
+# Dependencias
+node_modules/
+.pnpm-store/
+
+# Archivos de construcción
+dist/
+build/
+.astro/
+
+# Archivos de entorno
+.env
+.env.*
+!.env.example
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#locks
+package-lock.json
+pnpm-lock.yaml
+
+# Editor específico
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Cache y archivos temporales
+.cache/
+.temp/
+*.tsbuildinfo
+
+# Cobertura de pruebas
+coverage/
+
+# Astro específico
+.astro/
+
+# Archivos de debug
+.netlify/
+.vercel/
+.output/
+
+# Local SSL certificates
+*.pem
